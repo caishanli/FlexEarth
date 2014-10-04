@@ -1,0 +1,12 @@
+#ifndef FLEXEARTHUI_GLOBAL_H
+#define FLEXEARTHUI_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef FLEXEARTHUI_LIB
+# define FLEXEARTHUI_EXPORT Q_DECL_EXPORT
+#else
+# define FLEXEARTHUI_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // FLEXEARTHUI_GLOBAL_H
