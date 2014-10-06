@@ -2,13 +2,13 @@
 #define FEAPP_H
 
 #include <QApplication>
-#include <FlexEarthUI/flexearthui_global.h>
-namespace FLEXEARTHUI_NS
+#include <FEEarthUI/flexearthui_global.h>
+namespace FlexEarthUI_NS
 {
 	class FEMainWindow;
 }
 
-namespace FLEXEARTHUI_NS
+namespace FlexEarthUI_NS
 {
 
 	class FLEXEARTHUI_EXPORT FEApp : public QApplication
@@ -18,7 +18,7 @@ namespace FLEXEARTHUI_NS
 	public:
 		FEApp(int &argc, char **argv);
 		~FEApp();
-		void init();
+		bool init();
 
 	private:
 		FEMainWindow* _mainWindow;

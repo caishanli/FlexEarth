@@ -1,10 +1,11 @@
 #include <QtWidgets/QApplication>
-#include <FlexEarthUI/FEApp.h>
-using namespace FLEXEARTHUI_NS;
+#include <FEEarthUI/FEApp.h>
+using namespace FlexEarthUI_NS;
 
 int main(int argc, char *argv[])
 {
 	FEApp a(argc, argv);
-	a.init();
+	if (!a.init())
+		a.quit();
 	return a.exec();
 }

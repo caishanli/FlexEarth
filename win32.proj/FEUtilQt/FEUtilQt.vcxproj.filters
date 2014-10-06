@@ -24,53 +24,41 @@
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{cbd51d33-2328-491c-918a-b5b63c14db28}</UniqueIdentifier>
+      <UniqueIdentifier>{010d9bdb-0f15-4a8b-a585-5c69084245bf}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{54feaafd-fb12-4117-8cf9-818a3b3dbb23}</UniqueIdentifier>
+      <UniqueIdentifier>{e348ddd7-0c55-405f-91a8-26e7daadc1a0}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\FEEarthUI\FEApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_FEApp.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_FEApp.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\FEEarthUI\FEMainWindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_FEMainWindow.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_FEMainWindow.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
+    <ClInclude Include="..\..\src\FEUtilQt\feutilqt_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\src\FEEarthUI\FEApp.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\src\FEEarthUI\FEMainWindow.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\src\FEEarthUI\FEMainWindow.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_FEMainWindow.h">
+    <ClCompile Include="..\..\src\FEUtilQt\ViewWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FEUtilQt\ViewerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ViewerWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ViewerWidget.cpp">
       <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\FEEarthUI\flexearthui_global.h">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\src\FEUtilQt\ViewWidget.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\FEUtilQt\ViewerWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>
