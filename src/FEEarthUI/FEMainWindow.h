@@ -5,12 +5,12 @@
 #include <FEEarthUI/GeneratedFiles/ui_FEMainWindow.h>
 #include <FEEarthUI/flexearthui_global.h>
 
-namespace FlexEarthUI_NS{}
-using namespace FlexEarthUI_NS;//for moc
+namespace FEEarthUI_NS{}
+using namespace FEEarthUI_NS;//for moc
 
-namespace FlexEarthUI_NS
+namespace FEEarthUI_NS
 {
-	class FLEXEARTHUI_EXPORT FEMainWindow : public QMainWindow
+	class FEEARTHUI_EXPORT FEMainWindow : public QMainWindow
 	{
 		Q_OBJECT
 

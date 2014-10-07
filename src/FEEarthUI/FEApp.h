@@ -3,23 +3,22 @@
 
 #include <QApplication>
 #include <FEEarthUI/flexearthui_global.h>
-namespace FlexEarthUI_NS
+namespace FEEarthUI_NS
 {
 	class FEMainWindow;
 }
 
-namespace FlexEarthUI_NS
+namespace FEEarthUI_NS
 {
 
-	class FLEXEARTHUI_EXPORT FEApp : public QApplication
+	class FEEARTHUI_EXPORT FEApp : public QApplication
 	{
 		Q_OBJECT
 
 	public:
 		FEApp(int &argc, char **argv);
 		~FEApp();
-		bool init();
-
+		bool init(const std::string& dataDir);
 	private:
 		FEMainWindow* _mainWindow;
 	};

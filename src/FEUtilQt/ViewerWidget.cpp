@@ -150,6 +150,8 @@ void ViewerWidget::paintEvent(QPaintEvent* e)
 	if (_viewer->getRunFrameScheme() == osgViewer::ViewerBase::CONTINUOUS ||
 		_viewer->checkNeedToDoFrame())
 	{
+		//this->makeCurrent();
 		_viewer->frame();
+		//this->doneCurrent();
 	}
 }

@@ -1,6 +1,12 @@
+#include <osgViewer/Viewer>
+#include <FEEarth/FEEarthViewer.h>
+#include <FEEarth/FEEngine.h>
+#include <FEUtilQt/ViewerWidget.h>
 #include <FEEarthUI/FEMainWindow.h>
 
-using namespace FlexEarthUI_NS;
+using namespace FEEarthUI_NS;
+using namespace FEEarth_NS;
+using namespace FEUtilQt_NS;
 
 FEMainWindow::FEMainWindow(QWidget *parent)
 	: QMainWindow(parent)
@@ -29,6 +35,18 @@ bool FEMainWindow::init()
 
 bool FEMainWindow::initEarth()
 {
+	//0 earthViewer
+	FEEarthViewer* earthViewer = new FEEarthViewer();
+	bool b = earthViewer->init(engine()->dataDir() + "/project/default.earth");
+	if (!b)
+		return false;
+
+	//1 ViewerWidget
+	osgViewer::Viewer* viewer = earthViewer->viewer();
+	ViewerWidget *viewerWidget = new ViewerWidget(viewer);
+	setCentralWidget(viewerWidget);
+	showMaximized();
+
 	return true;
 }
 
